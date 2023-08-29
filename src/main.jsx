@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout'
+import NuevoCliente from './pages/NuevoCliente'
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/clientes/nuevo',
-        element: <h1>Nosotros</h1>
+        element: <NuevoCliente/>
       }
     ]
   },
