@@ -44,9 +44,9 @@ export function loader(){
 
 function Index() {
 
-    const datos = useLoaderData();
+    const clientes = useLoaderData();
 
-    console.log(datos);
+    console.log(clientes);
 
     return (
         <>
