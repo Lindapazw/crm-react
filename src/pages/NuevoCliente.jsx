@@ -42,7 +42,7 @@ const NuevoCliente = () => {
             </div>
 
             <div className="bg-white shadow rounded-md md:w-3/4 mx-auto p-5 scroll-py-10 mt-10">
-                {errores?.length && errores.map((error, i) => <Error key={i}>{error}</Error>)}
+                {errores?.length && errores.map( (error, i) => <Error key={i}>{error}</Error> )}
                 <Form method='POST' noValidate>
                     <Formulario/>
                     <input className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg" type="submit" value="Registrar cliente"/>
