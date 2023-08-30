@@ -1,5 +1,6 @@
-import { useNavigate, Form } from "react-router-dom"
+import { useNavigate, Form, useActionData } from "react-router-dom"
 import Formulario from "../components/Formulario"
+import Error from "../components/Error";
 
 export async function action({ request }) {
     const formData = await request.formData();
@@ -19,7 +20,10 @@ export async function action({ request }) {
 
 const NuevoCliente = () => {
 
+    const errores = useActionData()
     const navigate = useNavigate()
+
+    console.log(errores);
 
     return (
         <>
@@ -31,6 +35,7 @@ const NuevoCliente = () => {
             </div>
 
             <div className="bg-white shadow rounded-md md:w-3/4 mx-auto p-5 scroll-py-10 mt-10">
+                {errores?.length && errores.map((error, i) => <Error key={i}>{error}</Error>)}
                 <Form method='POST'>
                     <Formulario/>
                     <input className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg" type="submit" value="Registrar cliente"/>
