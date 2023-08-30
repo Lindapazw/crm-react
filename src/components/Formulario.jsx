@@ -64,7 +64,7 @@ const Formulario = ({cliente}) => {
                 <textarea
                     id="notas"
                     type="text"
-                    className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
+                    className="mt-2 block w-full p-3 bg-gray-50 h-20 align-self"
                     placeholder="Notas del Cliente"
                     name="notas"
                 />
