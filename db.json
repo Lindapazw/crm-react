@@ -1,13 +1,6 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
-      "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
       "id": 2,
       "nombre": "Karen",
       "telefono": 138198313,
@@ -34,22 +27,6 @@
       "telefono": 1398198938,
       "email": "pedro@juan.com",
       "empresa": "Codigo Con Juan"
-    },
-    {
-      "nombre": "Linda",
-      "empresa": "sss",
-      "email": "lindacsndelapaz@gmail.com",
-      "telefono": "03875769947",
-      "notas": "s",
-      "id": 6
-    },
-    {
-      "nombre": "Linda",
-      "empresa": "sss",
-      "email": "lindacsndelapaz@gmail.com",
-      "telefono": "03875769947",
-      "notas": "s",
-      "id": 7
     },
     {
       "nombre": "Linda",
