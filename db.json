@@ -27,22 +27,6 @@
       "telefono": 1398198938,
       "email": "pedro@juan.com",
       "empresa": "Codigo Con Juan"
-    },
-    {
-      "nombre": "Linda",
-      "empresa": "sss",
-      "email": "lindacsndelapaz@gmail.com",
-      "telefono": "03875769947",
-      "notas": "s",
-      "id": 8
-    },
-    {
-      "nombre": "AXEL NICOLAS TULA",
-      "empresa": "Alguna empres",
-      "email": "correo@correo.com",
-      "telefono": "03874154991",
-      "notas": "Hola mundo",
-      "id": 9
     }
   ]
 }
