@@ -1,6 +1,7 @@
 import { useNavigate, Form, useActionData } from "react-router-dom"
 import Formulario from "../components/Formulario"
 import Error from "../components/Error";
+import {agregarCliente} from '../data/Clientes'
 
 export async function action({ request }) {
     const formData = await request.formData();
@@ -22,6 +23,7 @@ export async function action({ request }) {
         console.log('Si hay errores');
         return errores;
     }
+    await agregarCliente(datos);
     return null;
 }
 
