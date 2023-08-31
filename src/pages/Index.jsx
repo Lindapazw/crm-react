@@ -4,11 +4,14 @@ import Cliente from '../components/Cliente';
 
 export function loader() { 
     const clientes = obtenerClientes()
-    return clientes
+    return clientes;
 }
 
 function Index() {
     const clientes = useLoaderData();
+    // Error baundaries
+
+
     return (
         <>
             <h1 className="font-black text-4xl text-blue-900">Clientes</h1>
