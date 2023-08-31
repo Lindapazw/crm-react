@@ -1,5 +1,8 @@
+import { obtenerCliente } from "../data/Clientes";
+
 export async function loader({params}) {
-    console.log(params);
+    const cliente = await obtenerCliente(params.clienteId);
+    console.log(cliente);
     return {};
 }
 
